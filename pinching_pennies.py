@@ -43,6 +43,6 @@ for n in range(1, n_max + 1):
         if is_winning_choice:
             winning_choices.append(choice)
             has_winning_choices[n] = True
-print('Initial distributions into two heaps guaranteeing victory to me (player 1):', winning_choices)
-print('Number of pennies guaranteeing victory to me (player 1):', [n for n, w in has_winning_choices.items() if w])
-print('Number of pennies guaranteeing victory to you (player 2):', [n for n, w in has_winning_choices.items() if not w])
+print('Initial distributions into two heaps guaranteeing victory to me (player 1):\n', winning_choices)
+print('\nNumber of pennies guaranteeing victory to me (player 1):\n', [n for n, w in has_winning_choices.items() if w])
+print('\nNumber of pennies guaranteeing victory to you (player 2):\n', [n for n, w in has_winning_choices.items() if not w])
